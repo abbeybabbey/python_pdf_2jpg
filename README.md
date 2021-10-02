@@ -1,0 +1,3 @@
+# ONLY DO THIS IF YOU'RE PLANNING TO BUILD YOUR OWN 
+1. We need to install pdf2image library by Eduard Belvat, installation is quite straight forward on windows. You open python terminal and type or paste the following: pip install pdf2image
+2. We also need poppler library which pdf2image uses, if you're wondering why, it's because poppler is pdf rendering library. Its "installation" might be more complicated. We download the latest release of poppler from their website or any other source. We open the zip file and extract the "bin" file. Then we specify the "bin" file paths in the convert_from_path function in pdf2image. In my case I just placed the "bin" file in my python script directory.
